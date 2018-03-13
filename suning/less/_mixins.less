@@ -1,0 +1,11 @@
+@charset "UFT-8";
+
+//适配主流设备
+.adapterFuc(@index) when (@index<=length(@deiveWidthlist)){
+	@media (min-width: extract(@deiveWidthlist,@index)) {
+		html{
+			font-size: extract(@deiveWidthlist,@index)/@psdWidth*@baseSize;
+		}
+	}
+	.adapterFuc(@index+1);
+}

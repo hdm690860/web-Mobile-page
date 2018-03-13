@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移动端类页面设计</title>
+	<style>
+	*{
+		padding:0;
+		margin:0;
+	}
+
+	.clearfix::before,
+	.clearfix::after {
+	  content: "";
+	  display: block;
+	  visibility: hidden;
+	  height: 0;
+	  line-height: 0;
+	  clear: both;
+	}
+	.contain{
+		width:1100px;
+		margin:0 auto;
+	}
+	h1{
+		margin-top: 50px;
+		text-align: center;
+		color: #000;
+		font-family: 'impact','Arial',sans-serif;
+		font-size: 100px;
+		margin-bottom: 150px;
+	}
+	.content div{
+		float: left;
+		width:33.33333%;
+	}
+	
+	.content div:last-child {
+		text-align: right;
+	}
+	.content div a{
+		text-decoration: none;
+		color:#000;
+		font-size: 30px;
+		font-family: '微软雅黑',sans-serif;
+	}
+	.content .liushi p{
+		padding-left: 18px;
+	}
+	.bootstrap{
+		text-align: center;
+	}
+	.content div a:hover p{
+		color:red;
+	}
+</style>
+</head>
+<body>
+	<div class="contain">
+		<h1>Demo</h1>
+		<div class="content clearfix">
+			<div class="liushi"><a href="jdM/index.html"><img src="images_demo/01.jpg" alt=""><p>流式布局</p></a></div>
+			<div class="bootstrap"><a href="wjs/index.html"><img src="images_demo/02.jpg" alt=""><p>响应式布局</p></a></div>
+			<div class="rem"><a href="suning/index.html"><img src="images_demo/03.jpg" alt=""><p>REM自适应布局</p></a></div>
+		</div>
+	</div>
+	
+</body>
+</html>
